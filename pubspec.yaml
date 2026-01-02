@@ -1,0 +1,34 @@
+name: fqc_Prototype
+description: "An Android Application that can check the quality of raw fish"
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  uuid: ^4.5.2
+  tflite_flutter: ^0.12.1
+  image_picker: ^1.0.7
+  image: ^4.0.17
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.3.3
+  hive_generator: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/species_model.tflite
+    - assets/Freshness_nila.tflite
+    - assets/Freshness_Bandeng.tflite
